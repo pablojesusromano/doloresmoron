@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(26, 26, 26);
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.row-nombre {
+}
+
+.div-nombre {
+    max-width: 700px;
+}
+
+.div-nombre h1 {
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.div-nombre h3 {
+    color: rgb(187, 187, 187);
+    font-weight: 400;
+}
+
+.div-imagen {
+    max-width: fit-content;
+}
