@@ -1,10 +1,108 @@
 body {
-    background-color: rgb(26, 26, 26);
-    color: whitesmoke;
+    background-color: rgb(231, 231, 231);
+    color: rgb(37, 37, 37);
     font-family: 'Montserrat', sans-serif;
+/*     cursor: url('../img/paintbrush.png'), auto; */
 }
 
-.row-nombre {
+/* ------------ NAVBAR --------- */
+
+.navbar {
+    background-color: rgb(231, 231, 231);
+}
+
+/* ---------- SUBRAYADO DEL NAVBAR --------- */
+
+.underline {
+    color: var(--blue-dark);
+    display: inline-block;
+    position: relative;
+}
+
+.underline:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(27, 12, 235);
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: 0.3s ease-out;
+}
+
+.underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom;
+}
+
+.ul-1:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 174, 0);
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: 0.3s ease-out;
+}
+
+.ul-2:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(199, 53, 16);
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: 0.3s ease-out;
+}
+
+.ul-3:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(70, 175, 0);
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: 0.3s ease-out;
+}
+
+.ul-4:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(149, 0, 179);
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: 0.3s ease-out;
+}
+
+
+/* --------- DIV PRINCIPAL ----------- */
+.principal-bg {
+    height: 50rem;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    background-color: rgb(231, 231, 231);
+}
+
+.quote {
+    color: rgb(31, 31, 31);
+    font-weight: 300;
+    font-style: italic;
 }
 
 .div-nombre {
@@ -17,10 +115,38 @@ body {
 }
 
 .div-nombre h3 {
-    color: rgb(187, 187, 187);
+    color: rgb(31, 31, 31);
     font-weight: 400;
 }
 
 .div-imagen {
     max-width: fit-content;
+    position: relative;
+    transition: transform .5s;
 }
+
+.div-imagen:hover {
+    transform: scale(1.02);
+}
+
+.div-imagen img {
+    display: block;
+}
+
+.sombra {
+    position: absolute;
+    width: fit-content;
+    height: 33%; /* Ajusta la altura de la sombra según tus preferencias */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    bottom: 0;
+}
+
+/* Estilo para el texto blanco encima de la imagen */
+.texto {
+    position: absolute;
+    bottom: 3rem; /* Ajusta la posición vertical del texto según tus preferencias */
+    left: 3rem; /* Ajusta la posición horizontal del texto según tus preferencias */
+    color: white;
+    font-size: 22px; /* Ajusta el tamaño de fuente según tus preferencias */
+}
+
