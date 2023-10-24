@@ -8,14 +8,11 @@ body {
 .cursor {
     z-index: -10;
     position: fixed;
-    background-color: blueviolet;
+    background-color: colors;
     width: 20px;
     height: 20px;
     border-radius: 50%;
     pointer-events: none;
-    box-shadow: 0 0 20px blueviolet,
-                0 0 60px blueviolet,
-                0 0 100px blueviolet;
     animation: colors 5s infinite;
 }
 
