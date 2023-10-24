@@ -5,6 +5,40 @@ body {
 /*     cursor: url('../img/paintbrush.png'), auto; */
 }
 
+.cursor {
+    z-index: -10;
+    position: fixed;
+    background-color: blueviolet;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 20px blueviolet,
+                0 0 60px blueviolet,
+                0 0 100px blueviolet;
+    animation: colors 5s infinite;
+}
+
+@keyframes colors {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.cursor::before {
+    content: '';
+    position: absolute;
+    background: blueviolet;
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    transform: translate(-30%, -30%);
+    border-radius: 50%;
+}
+
 /* ------------ NAVBAR --------- */
 
 .navbar {
@@ -92,29 +126,34 @@ body {
 
 /* --------- DIV PRINCIPAL ----------- */
 .principal-bg {
+    z-index: 1;
     height: 50rem;
     margin-left: 0;
     margin-right: 0;
     width: 100%;
-    background-color: rgb(231, 231, 231);
+    background-color: transparent;
 }
 
 .quote {
+    z-index: 1;
     color: rgb(31, 31, 31);
     font-weight: 300;
     font-style: italic;
 }
 
 .div-nombre {
+    z-index: 1;
     max-width: 700px;
 }
 
 .div-nombre h1 {
+    z-index: 1;
     font-size: 70px;
     font-weight: 700;
 }
 
 .div-nombre h3 {
+    z-index: 1;
     color: rgb(31, 31, 31);
     font-weight: 400;
 }
@@ -136,17 +175,16 @@ body {
 .sombra {
     position: absolute;
     width: fit-content;
-    height: 33%; /* Ajusta la altura de la sombra según tus preferencias */
+    height: 33%; 
     background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
     bottom: 0;
 }
 
-/* Estilo para el texto blanco encima de la imagen */
 .texto {
     position: absolute;
-    bottom: 3rem; /* Ajusta la posición vertical del texto según tus preferencias */
-    left: 3rem; /* Ajusta la posición horizontal del texto según tus preferencias */
+    left: 3rem;
+    bottom: 3rem; 
     color: white;
-    font-size: 22px; /* Ajusta el tamaño de fuente según tus preferencias */
+    font-size: 22px; 
 }
 
