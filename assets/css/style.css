@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(247, 247, 247);
     color: rgb(37, 37, 37);
     font-family: 'Montserrat', sans-serif;
 /*     cursor: url('../img/paintbrush.png'), auto; */
@@ -37,10 +37,10 @@ body {
 }
 
 /* ------------ NAVBAR --------- */
-
+/* 
 .navbar {
     background-color: rgb(231, 231, 231);
-}
+} */
 
 /* ---------- SUBRAYADO DEL NAVBAR --------- */
 
@@ -124,7 +124,6 @@ body {
 /* --------- DIV PRINCIPAL ----------- */
 .principal-bg {
     z-index: 1;
-    height: 50rem;
     margin-left: 0;
     margin-right: 0;
     width: 100%;
@@ -166,7 +165,8 @@ body {
 }
 
 .div-imagen img {
-    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .sombra {
@@ -185,3 +185,7 @@ body {
     font-size: 22px; 
 }
 
+@media (max-width: 1250px) {
+    .cursor {}
+    .cursor::before{}
+}
