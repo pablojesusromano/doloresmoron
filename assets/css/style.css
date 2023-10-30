@@ -1,10 +1,9 @@
 body {
     background-color: rgb(250, 250, 250);
-    color: rgb(37, 37, 37);
     font-family: 'Montserrat', sans-serif;
 }
 
-.cursor {
+/* .cursor {
     z-index: 99999;
     position: fixed;
     background-color: colors;
@@ -34,7 +33,7 @@ body {
     opacity: 0.2;
     transform: translate(-30%, -30%);
     border-radius: 50%;
-}
+} */
 
 /* ------------ NAVBAR --------- */
 
@@ -128,6 +127,35 @@ body {
 
 /* --------- DIV PRINCIPAL ----------- */
 
+
+.imagen-fondo {
+    background-image: url('../img/patagonia-tierra-generosa.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-position: center center; /* Centra la imagen vertical y horizontalmente */
+    width: 100%;
+    height: 60vh; /* Establece la altura del contenedor al 100% del viewport height */
+    position: relative; /* Permite posicionar los elementos hijos con respecto a este contenedor */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* Agrega una sombra al contenedor */
+}
+
+.sombra-principal {
+    z-index: 1;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    height: 100%;
+    position: absolute;
+    width: fit-content;
+    bottom: 0;
+}
+
+.sin-estilo {
+    z-index: 2;
+    text-decoration: none; /* Elimina el subrayado */
+    color: none; /* Usa el color heredado del contenedor */
+    background: none;
+    left: 0;
+    background-color: none;
+}
+
 .quote {
     z-index: 1;
     color: rgb(31, 31, 31);
@@ -135,7 +163,19 @@ body {
     font-style: italic;
 }
 
+.quote-principal {
+    z-index: 1;
+    color: rgb(31, 31, 31);
+    font-weight: 300;
+    font-style: italic;
+}
+
 .div-nombre {
+    z-index: 1;
+    max-width: 700px;
+}
+
+.div-nombre-principal {
     z-index: 1;
     max-width: 700px;
 }
@@ -148,7 +188,17 @@ body {
 
 .div-nombre h3 {
     z-index: 1;
-    color: rgb(31, 31, 31);
+    font-weight: 400;
+}
+
+.div-nombre-principal h1 {
+    z-index: 1;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.div-nombre-principal h3 {
+    z-index: 1;
     font-weight: 400;
 }
 
@@ -184,7 +234,7 @@ body {
 }
 
 /* desactiva el color del cursor en pantallas mas pequeñas que 767 pixeles de ancho */
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
     .cursor {
         z-index: 99999;
         position: none;
@@ -205,7 +255,7 @@ body {
         opacity: 0;
         border-radius: 0%;
     }
-}
+} */
 
 
 
@@ -237,6 +287,69 @@ body {
         color: white;
         font-size: 18px;
     }
+}
+
+@media (max-width: 607px) {
+
+    .div-nombre-principal h1 {
+        font-size: 60px;
+        font-weight: 700;
+    }
+
+
+    .div-nombre-principal h3 {
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    .quote-principal {
+        font-size: 22px;
+        font-weight: 300;
+        font-style: italic;
+    }
+
+}
+
+@media (max-width: 457px) {
+
+    .div-nombre-principal h1 {
+        font-size: 48px;
+        font-weight: 700;
+    }
+
+
+    .div-nombre-principal h3 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .quote-principal {
+        font-size: 20px;
+        font-weight: 300;
+        font-style: italic;
+    }
+
+}
+
+@media (max-width: 330px) {
+
+    .div-nombre-principal h1 {
+        font-size: 45px;
+        font-weight: 700;
+    }
+
+
+    .div-nombre-principal h3 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .quote-principal {
+        font-size: 18px;
+        font-weight: 300;
+        font-style: italic;
+    }
+
 }
 
 @media (max-width: 375px) {
