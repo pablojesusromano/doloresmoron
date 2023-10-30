@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -16,86 +17,213 @@
 </head>
 
 <body>
-    <div class="cursor"></div>
-    <nav class="navbar navbar-expand-lg bg-light sticky-top shadow py-3">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"><span
-                                class="underline">Inicio</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><span class="ul-1 underline">Cuadros</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><span class="ul-2 underline">Biografía</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><span class="ul-3 underline">Entrevistas</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><span class="ul-4 underline">Contacto</span></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <section class="mx-3">
 
-        <!--         <nav class="p-5 mx-auto navbar navbar-expand-lg sticky-top shadow">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
+    <div class="cursor"></div>
+
+    <section class="w-100 row justify-content-evenly">
+
+        <nav class="navbar navbar-expand-lg sticky-top shadow py-3 rounded w-100">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav mx-auto">
-                        <a class="nav-link active mx-3" aria-current="page" href="#"><span
-                                class="underline">Inicio</span></a>
-                        <a class="nav-link mx-3" href="#"><span class="ul-1 underline">Cuadros</span></a>
-                        <a class="nav-link mx-3" href="#"><span class="ul-2 underline">Biografía</span></a>
-                        <a class="nav-link mx-3" href="#"><span class="ul-3 underline">Entrevistas</span></a>
-                        <a class="nav-link mx-3" href="#"><span class="ul-4 underline">Contacto</span></a>
-                    </div>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <span class="underline">Inicio</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cuadros"><span class="ul-1 underline">Cuadros</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#biografia"><span class="ul-2 underline">Biografía</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#entrevistas"><span class="ul-3 underline">Entrevistas</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto"><span class="ul-4 underline">Contacto</span></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
- -->
-        <div class="principal-bg row-nombre row justify-content-evenly mx-3 mt-5 align-items-center d-flex">
-            <div class="div-nombre col-lg-6 col-md-6 col-sm-12">
-                <h1>
-                    Dolores Ocampo de Morón
-                </h1>
-                <h3>
-                    Artista plástica
-                </h3>
-                <h3 class="quote pt-4">
-                    "A veces tengo ganas de expresar una cosa que me molestó o que me gustó mucho, voy y lo pinto.
-                    Otras veces empiezo a pintar, a manchar, a ver qué sale."
-                </h3>
-            </div>
-            <div class="div-imagen col-lg-6 col-md-6 col-sm-12" style="max-width: 600px;">
-                <a href="" class="position-relative d-flex">
-                    <a href="./assets/img/patagonia-tierra-generosa.jpg" data-fancybox data-caption="Single image">
-                        <img src="./assets/img/patagonia-tierra-generosa.jpg" class="imagen rounded-4 shadow-lg mt-5"
-                            alt="">
-                    </a>
-
-                    <div class="sombra position-absolute w-100 h-45 rounded-4"></div>
-                    <div class="texto-img position-absolute text-white m-2"><strong>1987 - "EXPLOSIÓN DEL BIG
-                            BANG"</strong>
-                        Museo Nacional del Petróleo de C. Rivadavia</div>
-                </a>
-            </div>
-        </div>
 
 
+        <section class="row justify-content-center">
+            <section class="col-sm-8 col-md-10 col-lg-10 align-self-center">
+
+                <section class="inicio" id="inicio">
+                    <div
+                        class="container-fluid row-nombre row justify-content-evenly mx-3 mt-5 align-items-center d-flex">
+                        <div class="div-nombre col-lg-6 col-md-12 col-sm-12">
+                            <h1 class="d-flex">
+                                Dolores Ocampo de Morón
+                            </h1>
+                            <h3 class="d-flex">
+                                Artista plástica
+                            </h3>
+                            <h3 class="quote pt-4 d-flex">
+                                "A veces tengo ganas de expresar una cosa que me molestó o que me gustó mucho, voy y lo
+                                pinto.
+                                Otras veces empiezo a pintar, a manchar, a ver qué sale."
+                            </h3>
+                        </div>
+                        <div class="div-imagen col-lg-6 col-md-12 col-sm-12 d-flex"
+                            style="min-width: 360px;max-width: 600px;">
+                            <a href="./assets/img/patagonia-tierra-generosa.jpg" class="position-relative d-flex"
+                                data-fancybox data-caption='Dolores pintando "Patagonia Tierra Generosa"'>
+                                <img src="./assets/img/patagonia-tierra-generosa.jpg"
+                                    class="imagen rounded-4 shadow-lg mt-5" alt="">
+
+                                <div class="sombra-img position-absolute w-100 h-45 rounded-4"></div>
+                                <div class="texto-img position-absolute text-white m-2">Dolores pintando
+                                    <strong>"PATAGONIA
+                                        TIERRA
+                                        GENEROSA"</strong>
+                                    C. Rivadavia
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="cuadros mt-5" id="cuadros">
+                    <div class="cuadros-div row justify-content-center mx-3">
+                        <div class="container-fluid">
+                            <div class="row justify-content-center">
+                                <div class="row-nombre row justify-content-start mx-3 mt-5 align-items-center d-flex">
+                                    <div class="div-nombre div-cuadros">
+                                        <h1>Cuadros</h1>
+                                    </div>
+                                </div>
+
+
+                                <div class="div-imagen col-lg-6 col-md-12 col-sm-12 d-flex"
+                                    style="min-width: 360px;max-width: 600px;">
+                                    <a href="./assets/img/patagonia-tierra-generosa.jpg"
+                                        class="position-relative d-flex" data-fancybox
+                                        data-caption='Dolores pintando "Patagonia Tierra Generosa"'>
+                                        <img src="./assets/img/patagonia-tierra-generosa.jpg"
+                                            class="imagen rounded-4 shadow-lg mt-5" alt="">
+
+                                        <div class="sombra-img position-absolute w-100 h-45 rounded-4"></div>
+                                        <div class="texto-img position-absolute text-white m-2">Dolores pintando
+                                            <strong>"PATAGONIA
+                                                TIERRA
+                                                GENEROSA"</strong>
+                                            C. Rivadavia
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="div-imagen col-lg-6 col-md-12 col-sm-12 d-flex"
+                                    style="min-width: 360px;max-width: 600px;">
+                                    <a href="./assets/img/patagonia-tierra-generosa.jpg"
+                                        class="position-relative d-flex" data-fancybox
+                                        data-caption='Dolores pintando "Patagonia Tierra Generosa"'>
+                                        <img src="./assets/img/patagonia-tierra-generosa.jpg"
+                                            class="imagen rounded-4 shadow-lg mt-5" alt="">
+
+                                        <div class="sombra-img position-absolute w-100 h-45 rounded-4"></div>
+                                        <div class="texto-img position-absolute text-white m-2">Dolores pintando
+                                            <strong>"PATAGONIA
+                                                TIERRA
+                                                GENEROSA"</strong>
+                                            C. Rivadavia
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="div-imagen col-lg-6 col-md-12 col-sm-12 d-flex"
+                                    style="min-width: 360px;max-width: 600px;">
+                                    <a href="./assets/img/patagonia-tierra-generosa.jpg"
+                                        class="position-relative d-flex" data-fancybox
+                                        data-caption='Dolores pintando "Patagonia Tierra Generosa"'>
+                                        <img src="./assets/img/patagonia-tierra-generosa.jpg"
+                                            class="imagen rounded-4 shadow-lg mt-5" alt="">
+
+                                        <div class="sombra-img position-absolute w-100 h-45 rounded-4"></div>
+                                        <div class="texto-img position-absolute text-white m-2">Dolores pintando
+                                            <strong>"PATAGONIA
+                                                TIERRA
+                                                GENEROSA"</strong>
+                                            C. Rivadavia
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="div-imagen col-lg-6 col-md-12 col-sm-12 d-flex"
+                                    style="min-width: 360px;max-width: 600px;">
+                                    <a href="./assets/img/patagonia-tierra-generosa.jpg"
+                                        class="position-relative d-flex" data-fancybox
+                                        data-caption='Dolores pintando "Patagonia Tierra Generosa"'>
+                                        <img src="./assets/img/patagonia-tierra-generosa.jpg"
+                                            class="imagen rounded-4 shadow-lg mt-5" alt="">
+
+                                        <div class="sombra-img position-absolute w-100 h-45 rounded-4"></div>
+                                        <div class="texto-img position-absolute text-white m-2">Dolores pintando
+                                            <strong>"PATAGONIA
+                                                TIERRA
+                                                GENEROSA"</strong>
+                                            C. Rivadavia
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="div-imagen col-lg-6 col-md-12 col-sm-12 d-flex"
+                                    style="min-width: 360px;max-width: 600px;">
+                                    <a href="./assets/img/patagonia-tierra-generosa.jpg"
+                                        class="position-relative d-flex" data-fancybox
+                                        data-caption='Dolores pintando "Patagonia Tierra Generosa"'>
+                                        <img src="./assets/img/patagonia-tierra-generosa.jpg"
+                                            class="imagen rounded-4 shadow-lg mt-5" alt="">
+
+                                        <div class="sombra-img position-absolute w-100 h-45 rounded-4"></div>
+                                        <div class="texto-img position-absolute text-white m-2">Dolores pintando
+                                            <strong>"PATAGONIA
+                                                TIERRA
+                                                GENEROSA"</strong>
+                                            C. Rivadavia
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="div-imagen col-lg-6 col-md-12 col-sm-12 d-flex"
+                                    style="min-width: 360px;max-width: 600px;">
+                                    <a href="./assets/img/patagonia-tierra-generosa.jpg"
+                                        class="position-relative d-flex" data-fancybox
+                                        data-caption='Dolores pintando "Patagonia Tierra Generosa"'>
+                                        <img src="./assets/img/patagonia-tierra-generosa.jpg"
+                                            class="imagen rounded-4 shadow-lg mt-5" alt="">
+
+                                        <div class="sombra-img position-absolute w-100 h-45 rounded-4"></div>
+                                        <div class="texto-img position-absolute text-white m-2">Dolores pintando
+                                            <strong>"PATAGONIA
+                                                TIERRA
+                                                GENEROSA"</strong>
+                                            C. Rivadavia
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section class="biografia" id="biografia">
+                        <div class="row-nombre row justify-content-start mx-3 mt-5 align-items-center d-flex">
+                            <div
+                                class="container biografia-title row-nombre row justify-content-start mt-5 align-items-left d-flex">
+                                <div class="div-nombre">
+                                    <h1>Biografía</h1>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                </section>
+            </section>
+        </section>
     </section>
 
     <script src="./node_modules/@fancyapps/ui/dist/fancybox/fancybox.umd.js"></script>

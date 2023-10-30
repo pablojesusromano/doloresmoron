@@ -1,8 +1,7 @@
 body {
-    background-color: rgb(247, 247, 247);
+    background-color: rgb(250, 250, 250);
     color: rgb(37, 37, 37);
     font-family: 'Montserrat', sans-serif;
-/*     cursor: url('../img/paintbrush.png'), auto; */
 }
 
 .cursor {
@@ -20,6 +19,7 @@ body {
     0% {
         filter: hue-rotate(0deg);
     }
+
     100% {
         filter: hue-rotate(360deg);
     }
@@ -37,17 +37,17 @@ body {
 }
 
 /* ------------ NAVBAR --------- */
-/* 
-.navbar {
-    background-color: rgb(231, 231, 231);
-} */
 
-/* ---------- SUBRAYADO DEL NAVBAR --------- */
+.navbar {
+    background-color: rgb(250, 250, 250);
+}
+
 
 .underline {
     color: var(--blue-dark);
     display: inline-block;
     position: relative;
+    font-weight: 400;
 }
 
 .underline:after {
@@ -120,15 +120,13 @@ body {
     transition: 0.3s ease-out;
 }
 
+.active .underline:after {
+    transform: scaleX(1);
+}
+
+
 
 /* --------- DIV PRINCIPAL ----------- */
-.principal-bg {
-    z-index: 1;
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-    background-color: transparent;
-}
 
 .quote {
     z-index: 1;
@@ -169,26 +167,48 @@ body {
     height: auto;
 }
 
-.sombra {
+.sombra-img {
     position: absolute;
     width: fit-content;
-    height: 33%; 
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    height: 33%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
     bottom: 0;
 }
 
 .texto-img {
     position: absolute;
     left: 3rem;
-    bottom: 3rem; 
+    bottom: 2rem;
     color: white;
-    font-size: 22px; 
+    font-size: 22px;
 }
 
-@media (max-width: 1250px) {
-    .cursor {}
-    .cursor::before{}
+/* desactiva el color del cursor en pantallas mas pequeñas que 767 pixeles de ancho */
+@media (max-width: 767px) {
+    .cursor {
+        z-index: 99999;
+        position: none;
+        background-color: transparent;
+        width: 0px;
+        height: 0px;
+        border-radius: 0%;
+        pointer-events: none;
+        animation: none;
+    }
+
+    .cursor::before {
+        content: '';
+        position: none;
+        background: transparent;
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+        border-radius: 0%;
+    }
 }
+
+
+
 
 
 @media (max-width: 600px) {
@@ -213,9 +233,9 @@ body {
     .texto-img {
         position: absolute;
         left: 3rem;
-        bottom: 2rem; 
+        bottom: 2rem;
         color: white;
-        font-size: 18px; 
+        font-size: 18px;
     }
 }
 
@@ -224,9 +244,65 @@ body {
     .texto-img {
         position: absolute;
         left: 3rem;
-        bottom: 1rem; 
+        bottom: 1rem;
         color: white;
-        font-size: 15px; 
+        font-size: 15px;
     }
 }
 
+@media (max-width: 1250px) {
+
+    .texto-img {
+        position: absolute;
+        left: 3rem;
+        bottom: 1rem;
+        color: white;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1020px) {
+
+    .texto-img {
+        position: absolute;
+        left: 3rem;
+        bottom: 1rem;
+        color: white;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .texto-img {
+        position: absolute;
+        left: 3rem;
+        bottom: 1rem;
+        color: white;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 670px) {
+
+    .texto-img {
+        position: absolute;
+        left: 3rem;
+        bottom: 1rem;
+        color: white;
+        font-size: 20px;
+    }
+}
+
+
+/* @media (min-width: 1574px) {
+    .div-cuadros {
+        margin-left: 2rem;
+    }
+}
+
+@media (min-width: 1674px) {
+    .div-cuadros {
+        margin-left: 5rem;
+    }
+} */
