@@ -212,9 +212,69 @@ body {
     transform: scale(1.02);
 }
 
-.div-imagen img {
+/* .div-imagen img {
+    width: 50vh;
+    height: 40vh;
+} */
+
+.div-imagen-senadora {
+    background-image: url('../img/la-senadora.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-position: center top; /* Centra la imagen vertical y horizontalmente */
     width: 100%;
-    height: auto;
+    height: 40vh; /* Establece la altura del contenedor al 100% del viewport height */
+    position: relative; /* Permite posicionar los elementos hijos con respecto a este contenedor */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* Agrega una sombra al contenedor */
+}
+
+.div-imagen-mujer {
+    background-image: url('../img/mujer.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-position: center top; /* Centra la imagen vertical y horizontalmente */
+    width: 100%;
+    height: 40vh; /* Establece la altura del contenedor al 100% del viewport height */
+    position: relative; /* Permite posicionar los elementos hijos con respecto a este contenedor */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* Agrega una sombra al contenedor */
+}
+
+.div-imagen-hermanos {
+    background-image: url('../img/que-bueno-sentirnos-hermanos.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-position: center center; /* Centra la imagen vertical y horizontalmente */
+    width: 100%;
+    height: 40vh; /* Establece la altura del contenedor al 100% del viewport height */
+    position: relative; /* Permite posicionar los elementos hijos con respecto a este contenedor */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* Agrega una sombra al contenedor */
+}
+
+.div-imagen-tarde {
+    background-image: url('../img/llegada-la-tarde-el-señor-dijo.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-position: center center; /* Centra la imagen vertical y horizontalmente */
+    width: 100%;
+    height: 40vh; /* Establece la altura del contenedor al 100% del viewport height */
+    position: relative; /* Permite posicionar los elementos hijos con respecto a este contenedor */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* Agrega una sombra al contenedor */
+}
+
+.div-imagen-comunicandonos {
+    background-image: url('../img/comunicandonos-hoy.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-position: center top; /* Centra la imagen vertical y horizontalmente */
+    width: 100%;
+    height: 40vh; /* Establece la altura del contenedor al 100% del viewport height */
+    position: relative; /* Permite posicionar los elementos hijos con respecto a este contenedor */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* Agrega una sombra al contenedor */
+}
+
+.div-imagen-bigbang {
+    background-image: url('../img/bigbang.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-position: center top; /* Centra la imagen vertical y horizontalmente */
+    width: 100%;
+    height: 40vh; /* Establece la altura del contenedor al 100% del viewport height */
+    position: relative; /* Permite posicionar los elementos hijos con respecto a este contenedor */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* Agrega una sombra al contenedor */
 }
 
 .sombra-img {
@@ -223,6 +283,7 @@ body {
     height: 33%;
     background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
     bottom: 0;
+    left: 0;
 }
 
 .texto-img {
