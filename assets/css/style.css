@@ -237,36 +237,36 @@ body {
 } */
 
 .div-img {
-    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
-    background-position: center top; /* Centra la imagen vertical y horizontalmente */
+    background-size: cover; 
+    background-position: center top; 
     width: 100%;
-    height: 40vh; /* Establece la altura del contenedor al 100% del viewport height */
-    position: relative; /* Permite posicionar los elementos hijos con respecto a este contenedor */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* Agrega una sombra al contenedor */
+    height: 40vh; 
+    position: relative; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); 
 }
 
 .div-imagen-senadora {
-    background-image: url('../img/la-senadora.jpg'); /* Ruta de la imagen de fondo */
+    background-image: url('../img/la-senadora.jpg'); 
 }
 
 .div-imagen-mujer {
-    background-image: url('../img/mujer.jpg'); /* Ruta de la imagen de fondo */
+    background-image: url('../img/mujer.jpg'); 
 }
 
 .div-imagen-hermanos {
-    background-image: url('../img/que-bueno-sentirnos-hermanos.jpg'); /* Ruta de la imagen de fondo */
+    background-image: url('../img/que-bueno-sentirnos-hermanos.jpg'); 
 }
 
 .div-imagen-tarde {
-    background-image: url('../img/llegada-la-tarde-el-señor-dijo.jpg'); /* Ruta de la imagen de fondo */
+    background-image: url('../img/llegada-la-tarde-el-señor-dijo.jpg');
 }
 
 .div-imagen-comunicandonos {
-    background-image: url('../img/comunicandonos-hoy.jpg'); /* Ruta de la imagen de fondo */
+    background-image: url('../img/comunicandonos-hoy.jpg'); 
 }
 
 .div-imagen-bigbang {
-    background-image: url('../img/bigbang.jpg'); /* Ruta de la imagen de fondo */
+    background-image: url('../img/bigbang.jpg'); 
 }
 
 .sombra-img {
