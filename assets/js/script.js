@@ -24,12 +24,12 @@ let carousel = document.querySelector('.carousel-inner');
 
 var carpeta = "./assets/img/";
 var images = [
-    { path: carpeta + "la-senadora.jpg", name: "LA SENADORA", shortName: "senadora", number: "" },
-    { path: carpeta + "mujer.jpg", name: "ADELA", shortName: "mujer", number: "" },
-    { path: carpeta + "que-bueno-sentirnos-hermanos.jpg", name: "QUE BUENO SENTIRNOS HERMANOS", shortName: "hermanos", number: "" },
-    { path: carpeta + "llegada-la-tarde-el-señor-dijo.jpg", name: "LLEGADA LA TARDE EL SEÑOR DIJO", shortName: "tarde", number: "" },
+    { path: carpeta + "la-senadora.jpg", name: "LA SENADORA", shortName: "senadora", number: "544" },
+    { path: carpeta + "los-ninos-nos-miran.jpg", name: "LOS NIÑOS NOS MIRAN", shortName: "ninos", number: "115" },
+    { path: carpeta + "que-bueno-sentirnos-hermanos.jpg", name: "QUE BUENO SENTIRNOS HERMANOS", shortName: "hermanos", number: "68" },
+    { path: carpeta + "llegada-la-tarde-el-señor-dijo.jpg", name: "LLEGADA LA TARDE, EL SEÑOR DIJO: CRUCEMOS A LA OTRA ORILLA", shortName: "tarde", number: "705" },
     { path: carpeta + "comunicandonos-hoy.jpg", name: "COMUNICANDONOS HOY", shortName: "comunicandonos", number: "" },
-    { path: carpeta + "bigbang.jpg", name: "BIGBANG", shortName: "bigbang", number: "" },
+    { path: carpeta + "bigbang.jpg", name: "EXPLOSIÓN DEL BIG BANG", shortName: "bigbang", number: "253" },
 ];
 
 let counter = 1;
@@ -37,7 +37,7 @@ let pair = '';
 let flag = ' active';
 
 images.forEach(function (img) {
-    console.log(img);
+    //console.log(img);
     if (counter > 2) {
         counter = 1;
     }
@@ -45,8 +45,8 @@ images.forEach(function (img) {
         //console.log(img.path)
         pair = pair + `
         <div class="carousel-item${flag}">
-        <div class="row-nombre row justify-content-center mx-3 mt-5 align-items-center d-flex">
-        <div class="div-img div-imagen-${img.shortName} col-lg-6 col-md-12 col-sm-12 d-flex rounded-4 m-3" style="min-width: 320px;max-width: 600px;">
+        <div class="row-nombre row justify-content-center mx-3 my-5 align-items-center d-flex">
+        <div class="div-img div-imagen div-imagen-${img.shortName} col-lg-6 col-md-12 col-sm-12 d-flex rounded-4 m-3" style="min-width: 320px;max-width: 600px;">
             <div class="sombra-img position-absolute w-100 h-45 rounded-4"></div>
             <a href="${img.path}" class="sin-estilo position-relative d-flex w-100" data-fancybox data-caption='"${img.name}"'>
                 <div class="texto-img position-absolute text-white m-2">
@@ -60,7 +60,7 @@ images.forEach(function (img) {
     //console.log(pair);
     if (counter == 2) {
         pair = pair + `
-        <div class="div-img div-imagen-${img.shortName} col-lg-6 col-md-12 col-sm-12 d-flex rounded-4 m-3" style="min-width: 320px;max-width: 600px;">
+        <div class="div-img div-imagen div-imagen-${img.shortName} col-lg-6 col-md-12 col-sm-12 d-flex rounded-4 m-3" style="min-width: 320px;max-width: 600px;">
             <div class="sombra-img position-absolute w-100 h-45 rounded-4"></div>
             <a href="${img.path}" class="sin-estilo position-relative d-flex w-100" data-fancybox data-caption='"${img.name}"'>
                 <div class="texto-img position-absolute text-white m-2">

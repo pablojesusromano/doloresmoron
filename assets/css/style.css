@@ -123,28 +123,30 @@ body {
     transform: scaleX(1);
 }
 
+/* --------------------- FIN NAVBAR ----------------------- */
 
 
-/* --------- DIV PRINCIPAL ----------- */
+
+
+/* -------------------- DIV PRINCIPAL --------------------- */
 
 
 .imagen-fondo {
-    background-image: url('../img/patagonia-tierra-generosa.jpg'); /* Ruta de la imagen de fondo */
-    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
-    background-position: center center; /* Centra la imagen vertical y horizontalmente */
+    background-image: url('../img/patagonia-tierra-generosa.jpg'); 
+    background-size: cover; 
+    background-position: center center; 
     width: 100%;
-    height: 60vh; /* Establece la altura del contenedor al 100% del viewport height */
-    position: relative; /* Permite posicionar los elementos hijos con respecto a este contenedor */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* Agrega una sombra al contenedor */
+    height: 60vh; 
+    position: relative; 
 }
 
 .imagen-fondo-biografia {
-    background-image: url('../img/la-vision-de-don-bosco-2.jpg'); /* Ruta de la imagen de fondo */
-    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
-    background-position: center center; /* Centra la imagen vertical y horizontalmente */
+    background-image: url('../img/la-vision-de-don-bosco-2.jpg'); 
+    background-size: cover; 
+    background-position: center center; 
     width: 100%;
-    height: 130vh; /* Establece la altura del contenedor al 100% del viewport height */
-    position: relative; /* Permite posicionar los elementos hijos con respecto a este contenedor */
+    height: 130vh; 
+    position: relative; 
 }
 
 
@@ -168,8 +170,8 @@ body {
 
 .sin-estilo {
     z-index: 2;
-    text-decoration: none; /* Elimina el subrayado */
-    color: none; /* Usa el color heredado del contenedor */
+    text-decoration: none; 
+    color: none; 
     background: none;
     left: 0;
     background-color: none;
@@ -221,6 +223,38 @@ body {
     font-weight: 400;
 }
 
+/* ----------------------- FIN DIV PRINCIPAL --------------- */
+
+
+/* ----------------- TEXTO CAMBIA COLOR ------------------------ */
+
+.texto-cambia-color {
+    animation: changeColor 15s infinite;
+}
+
+@keyframes changeColor {
+    0%, 100% { color: #fd8a8a; }
+    12.5% { color: #8d9f91; }
+    25% { color: #e0869e; }
+    37.5% { color: #a8d1d1; }
+    50% { color: #9ea1d4; }
+    62.5% { color: #ffc34a; }
+    75% { color: #f6aa90; }
+    87.5% { color: #215a6d; }
+/*     0%, 100% { color: rgb(192, 46, 46); }
+    12.5% { color: orange; }
+    25% { color: rgb(219, 205, 0); }
+    37.5% { color: green; }
+    50% { color: rgb(31, 31, 185); }
+    62.5% { color: purple; }
+    75% { color: pink; }
+    87.5% { color: rgb(21, 190, 190); } */
+}
+
+/* --------------- FIN TEXTO CAMBIA COLOR ----------------------- */
+
+/* ------------------------ DIV CUADROS -------------------- */
+
 .div-imagen {
     max-width: fit-content;
     position: relative;
@@ -231,11 +265,6 @@ body {
     transform: scale(1.02);
 }
 
-/* .div-imagen img {
-    width: 50vh;
-    height: 40vh;
-} */
-
 .div-img {
     background-size: cover; 
     background-position: center top; 
@@ -245,8 +274,33 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); 
 }
 
+.carousel-inner {
+    background-image: url('../img/unp-rectorado.jpg');
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.carousel-inner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
+
+/*  -------------------- IMAGENES ---------------------- */
+
 .div-imagen-senadora {
     background-image: url('../img/la-senadora.jpg'); 
+}
+
+.div-imagen-ninos {
+    background-image: url('../img/los-ninos-nos-miran.jpg'); 
 }
 
 .div-imagen-mujer {
@@ -269,6 +323,8 @@ body {
     background-image: url('../img/bigbang.jpg'); 
 }
 
+/* ---------------------- FIN IMAGENES --------------------- */
+
 .sombra-img {
     position: absolute;
     width: fit-content;
@@ -286,7 +342,8 @@ body {
     font-size: 22px;
 }
 
-/* desactiva el color del cursor en pantallas mas pequeñas que 767 pixeles de ancho */
+/* --------------- FIN DIV CUADROS -------------------- */
+
 /* @media (max-width: 767px) {
     .cursor {
         z-index: 99999;
@@ -312,7 +369,7 @@ body {
 
 
 
-
+/* -------------- MEDIA QUERIES ------------------ */
 
 @media (max-width: 600px) {
 
@@ -459,16 +516,3 @@ body {
         font-size: 20px;
     }
 }
-
-
-/* @media (min-width: 1574px) {
-    .div-cuadros {
-        margin-left: 2rem;
-    }
-}
-
-@media (min-width: 1674px) {
-    .div-cuadros {
-        margin-left: 5rem;
-    }
-} */
