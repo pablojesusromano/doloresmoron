@@ -207,6 +207,12 @@ body {
     font-weight: 700;
 }
 
+h2 {
+    z-index: 1;
+    font-size: 50px;
+    font-weight: 600;
+}
+
 .div-nombre h3 {
     z-index: 1;
     font-weight: 400;
@@ -294,6 +300,25 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)); */
 }
 
+.carousel-inner-bio {
+    background-color: white;
+    background-image: url('../img/la-vision-de-don-bosco-2.jpg');
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.carousel-inner-bio::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.6); 
+    }
 /*  -------------------- IMAGENES ---------------------- */
 
 .div-imagen-senadora {
