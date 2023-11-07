@@ -313,7 +313,7 @@ h2 {
     background-size: cover;
     background-position: left top;
     width: 100%;
-    height: auto;
+    height: 80vh;
     position: relative;
 }
 
@@ -326,6 +326,36 @@ h2 {
         bottom: 0;
         background: rgba(0, 0, 0, 0.6); 
     }
+
+/* --------- SCROLLABLE BIO -------------------- */
+
+.scrollable-bio {
+    max-height: 50vh;  /*Establece la altura máxima que desees */
+    overflow: auto;
+}
+
+.scrollable-bio::-webkit-scrollbar {
+    width: 8px; /* Ancho del riel del scrollbar */
+}
+
+.scrollable-bio::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color de fondo del riel */
+    border-radius: 5px; /* Radio de borde del riel */
+}
+
+.scrollable-bio::-webkit-scrollbar-thumb {
+    background: #888; /* Color del pulgar */
+    border-radius: 5px; /* Radio de borde del pulgar */
+}
+
+.scrollable-bio::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color del pulgar al pasar el cursor sobre él */
+}
+
+/* --------- FIN SCROLLABLE BIO ------------- */
+
+
+
 /*  -------------------- IMAGENES ---------------------- */
 
 .div-imagen-senadora {
