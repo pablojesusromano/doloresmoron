@@ -47,6 +47,7 @@ body {
     display: inline-block;
     position: relative;
     font-weight: 500;
+    font-size: 20px;
 }
 
 .underline:after {
@@ -213,6 +214,12 @@ h2 {
     font-weight: 600;
 }
 
+.title-general {
+    z-index: 1;
+    font-size: 50px;
+    font-weight: 700;
+}
+
 .div-nombre h3 {
     z-index: 1;
     font-weight: 400;
@@ -304,7 +311,7 @@ h2 {
     background-color: white;
     background-image: url('../img/la-vision-de-don-bosco-2.jpg');
     background-size: cover;
-    background-position: center center;
+    background-position: left center;
     width: 100%;
     height: auto;
     position: relative;
