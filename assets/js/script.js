@@ -84,10 +84,10 @@ cuadros.forEach(function (img) {
 var carpetaMurales = "./assets/img/murales/";
 
 var murales = [
+    { path: carpetaMurales + "80-todas-las-manos-altar-catedral.jpg", name: '"TODAS LAS MANOS" (CATEDRAL COMODORO)', shortName: "todas-manos", number: "80" },
     { path: carpetaMurales + "53-unp-rectorado.jpg", name: '"COMODORO" (RECTORADO UNIVERSIDAD NACIONAL DE LA PATAGONIA)', shortName: "rectorado", number: "53" },
     { path: carpetaMurales + "75-la-vision-de-don-bosco-detalle.jpg", name: '"LA VISIÓN DE DON BOSCO" (CATEDRAL COMODORO)', shortName: "cristo", number: "75" },
     { path: carpetaMurales + "79-la-anunciacion-ambon-catedral.jpg", name: '"LA ANUNCIACIÓN" (CATEDRAL COMODORO)', shortName: "anunciacion", number: "79" },
-    { path: carpetaMurales + "80-todas-las-manos-altar-catedral.jpg", name: '"TODAS LAS MANOS" (CATEDRAL COMODORO)', shortName: "todas-manos", number: "80" },
     { path: carpetaMurales + "81-pescadores-de-hombres-altar-catedral.jpg", name: '"PESCADORES DE HOMBRES" (ALTAR CATEDRAL COMODORO)', shortName: "pescadores", number: "81" },
     { path: carpetaMurales + "82-el-trigo-y-el-pan-de-vida.jpg", name: '"EL TRIGO Y EL PAN DE LA VIDA" (CATEDRAL COMODORO)', shortName: "trigo-pan", number: "82" },
     { path: carpetaMurales + "83-las-vides-y-el-vino-altar-catedral.jpg", name: '"LAS VIDES Y EL VINO" (ALTAR CATEDRAL COMODORO)', shortName: "vino", number: "83" },
