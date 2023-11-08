@@ -38,10 +38,13 @@
                         <a class="nav-link" href="#cuadros"><span class="ul-1 underline">Cuadros</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#biografia"><span class="ul-2 underline">Biografía</span></a>
+                        <a class="nav-link" href="#murales"><span class="ul-2 underline">Murales</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#entrevistas"><span class="ul-3 underline">Entrevistas</span></a>
+                        <a class="nav-link" href="#biografia"><span class="ul-3 underline">Biografía</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#entrevistas"><span class="ul-4 underline">Entrevistas</span></a>
                     </li>
                     <!--                     <li class="nav-item">
                         <a class="nav-link" href="#contacto"><span class="ul-4 underline">Contacto</span></a>
@@ -79,9 +82,9 @@
         </div>
     </div>
 
-    <section class="cuadros mt-1" id="cuadros">
-        <div class="cuadros-div row justify-content-center">
+    <section class="cuadros" id="cuadros">
 
+        <div class="bg-dark cuadros-div row justify-content-center">
             <div class="container-fluid my-3">
                 <div class="row justify-content-center">
                     <div class="row-nombre row justify-content-center mx-3 align-items-center d-flex">
@@ -91,37 +94,65 @@
                     </div>
                 </div>
             </div>
-
-
-
         </div>
 
-        <div id="carouselExampleDark" class="carousel carousel-dark slide">
-            <div class="carousel-inner">
+        <div id="carouselCuadros" class="carousel carousel-dark slide">
+            <div class="carousel-inner carousel-inner-cuadros">
 
 
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-                data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCuadros" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-                data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCuadros" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
 
-        <section class="biografia mt-1" id="biografia">
+        <div class="bg-dark cuadros-div row justify-content-center" id="murales">
+            <div class="container-fluid my-3">
+                <div class="row justify-content-center">
+                    <div class="row-nombre row justify-content-center mx-3 align-items-center d-flex">
+                        <div class="div-nombre div-cuadros">
+                            <h2 class="text-center texto-cambia-color title-general">Murales</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-            <div class="row-nombre row justify-content-center mx-3 my-3 align-items-center d-flex">
-                <div class="div-nombre div-cuadros">
-                    <h2 class="text-center texto-cambia-color title-general">Biografía</h2>
+        <div id="carouselMurales" class="carousel carousel-dark slide">
+            <div class="carousel-inner carousel-inner-murales">
+
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselMurales" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselMurales" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <section class="biografia" id="biografia">
+
+            <div class="bg-dark cuadros-div row justify-content-center">
+                <div class="container-fluid my-3">
+                    <div class="row justify-content-center">
+                        <div class="row-nombre row justify-content-center mx-3 align-items-center d-flex">
+                            <div class="div-nombre div-cuadros">
+                                <h2 class="text-center texto-cambia-color title-general">Biografía</h2>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div id="carouselExample" class="carousel slide">
+            <div id="carouselBio" class="carousel slide">
                 <div class="carousel-inner carousel-inner-bio">
                     <div class="carousel-item active">
                         <h2 class="text-center text-white pt-5 bio-title">SU VIDA</h2>
@@ -259,73 +290,159 @@
                         </div>
                     </div>
                     <button class="carousel-control-prev" style="z-index: 900;" type="button"
-                        data-bs-target="#carouselExample" data-bs-slide="prev">
+                        data-bs-target="#carouselBio" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
                     <button class="carousel-control-next" style="z-index: 900;" type="button"
-                        data-bs-target="#carouselExample" data-bs-slide="next">
+                        data-bs-target="#carouselBio" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
         </section>
 
-        <section class="entrevistas mt-1" id="entrevistas">
+        <section class="entrevistas" id="entrevistas">
 
-            <div class="row-nombre row justify-content-center mx-3 my-3 align-items-center d-flex">
-                <div class="div-nombre div-cuadros">
-                    <h2 class="text-center texto-cambia-color title-general">Entrevistas</h2>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-10">
-                    <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1715658522%3Fsecret_token%3Ds-zsq0LTzRsr6&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
-
-                    </iframe>
-                    <div
-                        style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-                        <a href="https://soundcloud.com/soundcuser" title="Dolores Morón" target="_blank"
-                            style="color: #cccccc; text-decoration: none;">
-                            Dolores Ocampo de Morón
-                        </a> ·
-                        <a href="https://soundcloud.com/soundcuser/sets/entrevistas-dolores-moron/s-zsq0LTzRsr6"
-                            title="Entrevistas Dolores Morón" target="_blank"
-                            style="color: #cccccc; text-decoration: none;">
-                            Entrevistas
-                        </a>
+            <div class="bg-dark cuadros-div row justify-content-center">
+                <div class="container-fluid my-3">
+                    <div class="row justify-content-center">
+                        <div class="row-nombre row justify-content-center mx-3 align-items-center d-flex">
+                            <div class="div-nombre div-cuadros">
+                                <h2 class="text-center texto-cambia-color title-general">Entrevistas</h2>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <div id="carouselEntrevistas" class="carousel carousel-dark slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <h2 class="text-center pt-5 bio-title">ENTREVISTA</h2>
+                        <div class="row d-flex align-items-center justify-content-center py-5">
+                            <div class="col-8">
+                                <div style="padding:75% 0 0 0;position:relative;"><iframe
+                                        src="https://player.vimeo.com/video/882335241?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479"
+                                        frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+                                        style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                                        title="Entrevista a Dolores Ocampo de Morón"></iframe></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <h2 class="text-center mb-5 pt-5 bio-title">ENTREVISTA DIARIO DIGITAL</h2>
+                        <div class="row align-items-start justify-content-center py-5">
+                            <div class="col-8">
+                                <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+                                    <iframe                                         
+                                    style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden"
+                                        src="https://www.youtube.com/embed/sx5UBubX7Fs?si=KAAvJW_ZJr5v9_0f"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <h2 class="text-center mb-5 pt-5 bio-title">ENTREVISTA EL FARO ARTECULTURA</h2>
+                        <div class="row align-items-start justify-content-center py-5">
+                            <div class="col-8">
+                                <div style="padding:75% 0 0 0;position:relative;"><iframe
+                                        src="https://player.vimeo.com/video/882350464?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479"
+                                        frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+                                        style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                                        title="El Faro Artecultura  Dolores Ocampo de Moron y Dola">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <h2 class="text-center mb-5 pt-5 bio-title">HOMENAJE</h2>
+                        <div class="row align-items-start justify-content-center py-5">
+                            <div class="col-8">
+                                <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+                                    <iframe                                         
+                                    style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden"
+                                        src="https://www.youtube.com/embed/ejUGhRjWF7M?si=45J9dIiG9QkorKpS"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" style="z-index: 900;" type="button"
+                        data-bs-target="#carouselEntrevistas" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" style="z-index: 900;" type="button"
+                        data-bs-target="#carouselEntrevistas" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <div class="row-nombre row justify-content-center mx-3 my-3 align-items-center d-flex">
+                    <div class="div-nombre div-cuadros">
+                        <h2 class="text-center mb-5 pt-5 bio-title">ENTREVISTAS DE RADIO</h2>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-10">
+                        <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay"
+                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1715658522%3Fsecret_token%3Ds-zsq0LTzRsr6&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+
+                        </iframe>
+                        <div
+                            style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                            <a href="https://soundcloud.com/soundcuser" title="Dolores Morón" target="_blank"
+                                style="color: #cccccc; text-decoration: none;">
+                                Dolores Ocampo de Morón
+                            </a> ·
+                            <a href="https://soundcloud.com/soundcuser/sets/entrevistas-dolores-moron/s-zsq0LTzRsr6"
+                                title="Entrevistas Dolores Morón" target="_blank"
+                                style="color: #cccccc; text-decoration: none;">
+                                Entrevistas
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
         </section>
 
     </section>
 
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 px-3 my-4 border-top">
+    <footer class="d-flex flex-wrap justify-content-between bg-dark align-items-center py-5 px-3 mt-4 border-top">
         <div class="col-md-4 d-flex align-items-center">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-white text-decoration-none lh-1">
                 <img width="30" height="30" src="./assets/img/title-img.jpg" type="image/x-icon" alt="">
             </a>
-            <span class="mb-3 mb-md-0 text-body-secondary">© 2023 by <a class="sin-estilo"
-                    href="https://www.instagram.com/pablorromano/">Pablo Romano</a> | <a class="sin-estilo"
+            <span class="mb-3 mb-md-0 text-white">© 2023 by <a class="sin-estilo text-white"
+                    href="https://www.instagram.com/pablorromano/">Pablo Romano</a> | <a class="sin-estilo text-white"
                     href="https://www.instagram.com/desarrolloaustral">Desarrollo Austral</a></span>
         </div>
 
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+            <li class="ms-3"><a class="text-white" href="#"><svg class="bi" width="24" height="24">
                         <use xlink:href="#twitter"></use>
                     </svg></a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+            <li class="ms-3"><a class="text-white" href="#"><svg class="bi" width="24" height="24">
                         <use xlink:href="#instagram"></use>
                     </svg></a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+            <li class="ms-3"><a class="text-white" href="#"><svg class="bi" width="24" height="24">
                         <use xlink:href="#facebook"></use>
                     </svg></a></li>
         </ul>
     </footer>
 
+    <script src="https://player.vimeo.com/api/player.js"></script>
     <script src="./node_modules/@fancyapps/ui/dist/fancybox/fancybox.umd.js"></script>
     <script src="./assets/js/bootstrap/bootstrap.min.js"></script>
     <script src="./assets/js/bootstrap/bootstrap.bundle.min.js"></script>

@@ -20,10 +20,11 @@ var miDiv = document.getElementById("miDiv");
 // Asigna una imagen de fondo al div
 miDiv.style.backgroundImage = "url('ruta/a/tu/imagen.jpg')"; */
 
-let carousel = document.querySelector('.carousel-inner');
+let carouselCuadros = document.querySelector('.carousel-inner-cuadros');
+let carouselMurales = document.querySelector('.carousel-inner-murales');
 
 var carpeta = "./assets/img/";
-var images = [
+var cuadros = [
     { path: carpeta + "la-senadora.jpg", name: "LA SENADORA", shortName: "senadora", number: "544" },
     { path: carpeta + "los-ninos-nos-miran.jpg", name: "LOS NIÑOS NOS MIRAN", shortName: "ninos", number: "115" },
     { path: carpeta + "que-bueno-sentirnos-hermanos.jpg", name: "QUE BUENO SENTIRNOS HERMANOS", shortName: "hermanos", number: "68" },
@@ -36,7 +37,8 @@ let counter = 1;
 let pair = '';
 let flag = ' active';
 
-images.forEach(function (img) {
+
+cuadros.forEach(function (img) {
     //console.log(img);
     if (counter > 2) {
         counter = 1;
@@ -71,10 +73,67 @@ images.forEach(function (img) {
         </div>
         </div>
         `;
-        carousel.innerHTML = pair;
+        carouselCuadros.innerHTML = pair;
     }
     //console.log(pair);
 
     counter++;
+});
+
+var murales = [
+    { path: carpeta + "la-senadora.jpg", name: "LA SENADORA", shortName: "senadora", number: "544" },
+    { path: carpeta + "los-ninos-nos-miran.jpg", name: "LOS NIÑOS NOS MIRAN", shortName: "ninos", number: "115" },
+    { path: carpeta + "que-bueno-sentirnos-hermanos.jpg", name: "QUE BUENO SENTIRNOS HERMANOS", shortName: "hermanos", number: "68" },
+    { path: carpeta + "llegada-la-tarde-el-señor-dijo.jpg", name: "LLEGADA LA TARDE, EL SEÑOR DIJO: CRUCEMOS A LA OTRA ORILLA", shortName: "tarde", number: "705" },
+    { path: carpeta + "comunicandonos-hoy.jpg", name: "COMUNICANDONOS HOY", shortName: "comunicandonos", number: "" },
+    { path: carpeta + "bigbang.jpg", name: "EXPLOSIÓN DEL BIG BANG", shortName: "bigbang", number: "253" },
+];
+
+let counterMurales = 1;
+let pairMurales = '';
+let flagMurales = ' active';
+
+
+
+murales.forEach(function (imgMural) {
+    //console.log(img);
+    if (counterMurales > 2) {
+        counterMurales = 1;
+    }
+    if (counterMurales == 1) {
+        //console.log(img.path)
+        pairMurales = pairMurales + `
+        <div class="carousel-item${flagMurales}">
+        <div class="row-nombre row justify-content-center mx-3 my-5 align-items-center d-flex">
+        <div class="div-img div-imagen div-imagen-${imgMural.shortName} col-lg-6 col-md-12 col-sm-12 d-flex rounded-4 m-3" style="min-width: 320px;max-width: 600px;">
+            <div class="sombra-img position-absolute w-100 h-45 rounded-4"></div>
+            <a href="${imgMural.path}" class="sin-estilo position-relative d-flex w-100" data-fancybox data-caption='"${imgMural.name}"'>
+                <div class="texto-img position-absolute text-white m-2">
+                    <strong>"${imgMural.name}"</strong>
+                </div>
+            </a>
+        </div>
+        `;
+        flag = '';
+    }
+    //console.log(pairMurales);
+    if (counterMurales == 2) {
+        pairMurales = pairMurales + `
+        <div class="div-img div-imagen div-imagen-${imgMural.shortName} col-lg-6 col-md-12 col-sm-12 d-flex rounded-4 m-3" style="min-width: 320px;max-width: 600px;">
+            <div class="sombra-img position-absolute w-100 h-45 rounded-4"></div>
+            <a href="${imgMural.path}" class="sin-estilo position-relative d-flex w-100" data-fancybox data-caption='"${imgMural.name}"'>
+                <div class="texto-img position-absolute text-white m-2">
+                    <strong>"${imgMural.name}"</strong>
+                </div>
+            </a>
+        </div>
+        </div>
+        </div>
+        `;
+        carouselMurales.innerHTML = pairMurales;
+    }
+    //console.log(pair);
+
+    counterMurales++;
 });
 
