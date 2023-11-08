@@ -334,21 +334,21 @@ h2 {
     overflow: auto;
 }
 
-.scrollable-bio::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 8px; /* Ancho del riel del scrollbar */
 }
 
-.scrollable-bio::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: #f1f1f1; /* Color de fondo del riel */
     border-radius: 5px; /* Radio de borde del riel */
 }
 
-.scrollable-bio::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: #888; /* Color del pulgar */
     border-radius: 5px; /* Radio de borde del pulgar */
 }
 
-.scrollable-bio::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
     background: #555; /* Color del pulgar al pasar el cursor sobre él */
 }
 
