@@ -25,12 +25,24 @@ let carouselMurales = document.querySelector('.carousel-inner-murales');
 
 var carpetaCuadros = "./assets/img/cuadros/";
 var cuadros = [
-    { path: carpetaCuadros + "la-senadora.jpg", name: "LA SENADORA", shortName: "senadora", number: "544" },
-    { path: carpetaCuadros + "los-ninos-nos-miran.jpg", name: "LOS NIÑOS NOS MIRAN", shortName: "ninos", number: "115" },
-    { path: carpetaCuadros + "que-bueno-sentirnos-hermanos.jpg", name: "QUE BUENO SENTIRNOS HERMANOS", shortName: "hermanos", number: "68" },
-    { path: carpetaCuadros + "llegada-la-tarde-el-señor-dijo.jpg", name: "LLEGADA LA TARDE, EL SEÑOR DIJO: CRUCEMOS A LA OTRA ORILLA", shortName: "tarde", number: "705" },
+    { path: carpetaCuadros + "544-la-senadora.jpg", name: "LA SENADORA", shortName: "senadora", number: "544" },
+    { path: carpetaCuadros + "115-los-ninos-nos-miran.jpg", name: "LOS NIÑOS NOS MIRAN", shortName: "ninos", number: "115" },
+
+    { path: carpetaCuadros + "68-que-bueno-sentirnos-hermanos.jpg", name: "QUE BUENO SENTIRNOS HERMANOS", shortName: "hermanos", number: "68" },
+    { path: carpetaCuadros + "705-llegada-la-tarde-el-señor-dijo.jpg", name: "LLEGADA LA TARDE, EL SEÑOR DIJO: CRUCEMOS A LA OTRA ORILLA", shortName: "tarde", number: "705" },
+
     { path: carpetaCuadros + "comunicandonos-hoy.jpg", name: "COMUNICANDONOS HOY", shortName: "comunicandonos", number: "" },
-    { path: carpetaCuadros + "bigbang.jpg", name: "EXPLOSIÓN DEL BIG BANG", shortName: "bigbang", number: "253" },
+    { path: carpetaCuadros + "253-bigbang.jpg", name: "EXPLOSIÓN DEL BIG BANG", shortName: "bigbang", number: "253" },
+
+    { path: carpetaCuadros + "529-kona-ta-iell.jpg", name: "KONÁ TÁ IELL (CANTO PARA ENVIAR ENERGÍA)", shortName: "kona-ta-iell", number: "529" },
+    { path: carpetaCuadros + "maria-adela.jpg", name: "MARÍA ADELA", shortName: "maria-adela", number: "" },
+
+    { path: carpetaCuadros + "552-pillan-kushe.jpg", name: "PILLÁN KUSHÉ (LA ANCIANA SAGRADA)", shortName: "pillan-kushe", number: "552" },
+    { path: carpetaCuadros + "618-entre-el-cielo-y-la-tierra.jpg", name: "ENTRE EL CIELO Y LA TIERRA", shortName: "entre-el-cielo-y-la-tierra", number: "618" },
+
+    /*     { path: carpetaCuadros + ".jpg", name: "", shortName: "", number: "" },
+        { path: carpetaCuadros + ".jpg", name: "", shortName: "", number: "" }, */
+
 ];
 
 let counter = 1;
@@ -78,6 +90,10 @@ cuadros.forEach(function (img) {
     //console.log(pair);
 
     counter++;
+});
+
+cuadros.forEach(function (img) {
+    
 });
 
 

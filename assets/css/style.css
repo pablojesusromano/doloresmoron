@@ -246,10 +246,16 @@ h2 {
 /* ----------------- TEXTO CAMBIA COLOR ------------------------ */
 
 .texto-cambia-color {
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     animation: changeColor 15s infinite;
+
 }
 
 @keyframes changeColor {
+
     0%, 100% { color: #fd8a8a; }
     12.5% { color: #8d9f91; }
     25% { color: #e0869e; }
@@ -258,14 +264,7 @@ h2 {
     62.5% { color: #ffc34a; }
     75% { color: #f6aa90; }
     87.5% { color: #215a6d; }
-/*     0%, 100% { color: rgb(192, 46, 46); }
-    12.5% { color: orange; }
-    25% { color: rgb(219, 205, 0); }
-    37.5% { color: green; }
-    50% { color: rgb(31, 31, 185); }
-    62.5% { color: purple; }
-    75% { color: pink; }
-    87.5% { color: rgb(21, 190, 190); } */
+
 }
 
 /* --------------- FIN TEXTO CAMBIA COLOR ----------------------- */
@@ -372,21 +371,21 @@ h2 {
 /*  -------------------- IMAGENES CUADROS ---------------------- */
 
 .div-imagen-senadora {
-    background-image: url('../img/cuadros/la-senadora.jpg'); 
+    background-image: url('../img/cuadros/544-la-senadora.jpg'); 
 }
 
 .div-imagen-ninos {
-    background-image: url('../img/cuadros/los-ninos-nos-miran.jpg'); 
+    background-image: url('../img/cuadros/115-los-ninos-nos-miran.jpg'); 
 }
 
 /* ---------------------------------------------------------------- */
 
 .div-imagen-hermanos {
-    background-image: url('../img/cuadros/que-bueno-sentirnos-hermanos.jpg'); 
+    background-image: url('../img/cuadros/68-que-bueno-sentirnos-hermanos.jpg'); 
 }
 
 .div-imagen-tarde {
-    background-image: url('../img/cuadros/llegada-la-tarde-el-señor-dijo.jpg');
+    background-image: url('../img/cuadros/705-llegada-la-tarde-el-señor-dijo.jpg');
 }
 
 /* ---------------------------------------------------------------- */
@@ -396,14 +395,34 @@ h2 {
 }
 
 .div-imagen-bigbang {
-    background-image: url('../img/cuadros/bigbang.jpg'); 
+    background-image: url('../img/cuadros/253-bigbang.jpg'); 
+}
+
+
+
+/* ---------------------------------------------------------------- */
+
+
+.div-imagen-maria-adela {
+    background-image: url('../img/cuadros/maria-adela.jpg'); 
+}
+
+.div-imagen-kona-ta-iell {
+    background-image: url('../img/cuadros/529-kona-ta-iell.JPG'); 
 }
 
 /* ---------------------------------------------------------------- */
 
-.div-imagen-mujer {
-    background-image: url('../img/cuadros/mujer.jpg'); 
+
+
+.div-imagen-pillan-kushe {
+    background-image: url('../img/cuadros/552-pillan-kushe.JPG'); 
 }
+
+.div-imagen-entre-el-cielo-y-la-tierra {
+    background-image: url('../img/cuadros/618-entre-el-cielo-y-la-tierra.JPG'); 
+}
+
 
 /* ---------------------------------------------------------------- */
 
