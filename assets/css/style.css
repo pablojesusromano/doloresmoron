@@ -527,6 +527,14 @@ h2 {
 
 /* --------------- FIN DIV CUADROS -------------------- */
 
+/* ---------------- DIV VIDEOS ------------------------- */
+
+/* .carousel-inner-videos {
+    height: 80vh;
+} */
+
+/* --------------- FIN DIV VIDEOS ---------------------- */
+
 /* @media (max-width: 767px) {
     .cursor {
         z-index: 99999;
@@ -749,10 +757,20 @@ h2 {
     .bio-title {
         font-size: 36px;
     }
+
+    .texto-img-mural {
+        font-size: 22px;
+    }
 }
 
 @media (max-width: 1000px) {
     .bio-text {
         min-width: 60vh;
+    }
+}
+
+@media (min-width: 1920px) {
+    .carousel-inner-videos {
+        height: 80vh;
     }
 }
