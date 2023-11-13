@@ -40,6 +40,9 @@ var cuadros = [
     { path: carpetaCuadros + "552-pillan-kushe.jpg", name: "PILLÁN KUSHÉ (LA ANCIANA SAGRADA)", shortName: "pillan-kushe", number: "552" },
     { path: carpetaCuadros + "618-entre-el-cielo-y-la-tierra.jpg", name: "ENTRE EL CIELO Y LA TIERRA", shortName: "entre-el-cielo-y-la-tierra", number: "618" },
 
+    { path: carpetaCuadros + "662-los-angeles-traviesos.jpg", name: "LOS ANGELES TRAVIESOS", shortName: "los-angeles-traviesos", number: "662" },
+    { path: carpetaCuadros + "716-al-cielo-en-patineta.jpg", name: "AL CIELO EN PATINETA", shortName: "al-cielo-en-patineta", number: "716" },
+
     /*     { path: carpetaCuadros + ".jpg", name: "", shortName: "", number: "" },
         { path: carpetaCuadros + ".jpg", name: "", shortName: "", number: "" }, */
 
