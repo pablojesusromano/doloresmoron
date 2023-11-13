@@ -300,9 +300,27 @@ h2 {
 }
 
 .carousel-inner {
-    background-color: white;
-/*     background-image: url('../img/murales/53-unp-rectorado.jpg');
+    background-color: transparent;
+/*     background-image: url('../img/fondo-random-2.jpg');
  */    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.carousel-inner-cuadros {
+    background-image: url('../img/fondo-random-2.jpg');
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.entrevistas {
+    background-image: url('../img/fondo-random-2.jpg');
+    background-size: cover;
     background-position: center center;
     width: 100%;
     height: auto;
@@ -559,6 +577,13 @@ h2 {
 } */
 
 
+/* ----------- ENTREVISTAS ------------- */
+
+.text-entrevistas {
+    font-weight: 400;
+}
+
+/* --------- FIN ENTREVISTAS -------------- */
 
 /* ----- FOOTER ----------- */
 
@@ -761,6 +786,10 @@ h2 {
     .texto-img-mural {
         font-size: 22px;
     }
+
+    .carousel-inner-videos {
+        height: 55vh;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -771,6 +800,6 @@ h2 {
 
 @media (min-width: 1920px) {
     .carousel-inner-videos {
-        height: 80vh;
+        height: 85vh;
     }
 }

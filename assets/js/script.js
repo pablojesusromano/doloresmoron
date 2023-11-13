@@ -63,7 +63,7 @@ cuadros.forEach(function (img) {
         pair = pair + `
         <div class="carousel-item${flag}">
         <div class="row-nombre row justify-content-center mx-3 my-5 align-items-center d-flex">
-        <div class="div-img div-imagen div-imagen-${img.shortName} col-lg-6 col-md-12 col-sm-12 d-flex rounded-4 m-3" style="min-width: 320px;max-width: 600px;">
+        <div class="div-img div-imagen div-imagen-${img.shortName} col-lg-6 col-md-12 col-sm-12 d-flex rounded-4 m-3" style="min-width: 300px;max-width: 600px;">
             <div class="sombra-img position-absolute w-100 h-45 rounded-4"></div>
             <a href="${img.path}" class="sin-estilo position-relative d-flex w-100" data-fancybox data-caption='"${img.name}"'>
                 <div class="texto-img position-absolute text-white m-2">
