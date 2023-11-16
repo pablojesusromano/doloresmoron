@@ -61,7 +61,7 @@ cuadros.forEach(function (img) {
     if (counter == 1) {
         //console.log(img.path)
         pair = pair + `
-        <div class="carousel-item${flag}">
+        <div class="carousel-item${flag}" data-bs-interval="4000">
         <div class="row-nombre row justify-content-center mx-3 my-5 align-items-center d-flex">
         <div class="div-img div-imagen div-imagen-${img.shortName} col-lg-6 col-md-12 col-sm-12 d-flex rounded-4 m-3" style="min-width: 300px;max-width: 600px;">
             <div class="sombra-img position-absolute w-100 h-45 rounded-4"></div>
@@ -124,7 +124,7 @@ let flagMurales = ' active';
 murales.forEach(function (imgMural) {
 
     pairMurales = pairMurales + `
-        <div style="height:auto;" class="carousel-item${flagMurales} w-100">
+        <div style="height:auto;" class="carousel-item${flagMurales} w-100" data-bs-interval="4000">
             <div class="row justify-content-center align-items-center d-flex">
                 <div class="div-img-mural div-imagen div-imagen-${imgMural.shortName} col-lg-6 col-md-12 col-sm-12 d-flex" style="min-width: 100%;max-width: 100%;background-position: center ${imgMural.position};">
                     <div class="sombra-img position-absolute w-100"></div>
