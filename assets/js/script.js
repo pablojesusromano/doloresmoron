@@ -124,7 +124,7 @@ let flagMurales = ' active';
 murales.forEach(function (imgMural) {
 
     pairMurales = pairMurales + `
-        <div style="height:auto;" class="carousel-item${flagMurales} w-100" data-bs-interval="4000">
+        <div style="height:auto;" class="carousel-item${flagMurales} w-100"  data-bs-interval="4000">
             <div class="row justify-content-center align-items-center d-flex">
                 <div class="div-img-mural div-imagen div-imagen-${imgMural.shortName} col-lg-6 col-md-12 col-sm-12 d-flex" style="min-width: 100%;max-width: 100%;background-position: center ${imgMural.position};">
                     <div class="sombra-img position-absolute w-100"></div>
@@ -143,3 +143,16 @@ murales.forEach(function (imgMural) {
 });
 carouselMurales.innerHTML = pairMurales;
 
+document.addEventListener('DOMContentLoaded', function () {
+    var navbar = document.querySelector('.navbar-collapse');
+
+    navbar.addEventListener('shown.bs.collapse', function () {
+        var closeButton = document.getElementById('close-button');
+        closeButton.style.display = 'block';
+    });
+
+    navbar.addEventListener('hidden.bs.collapse', function () {
+        var closeButton = document.getElementById('close-button');
+        closeButton.style.display = 'none';
+    });
+});
