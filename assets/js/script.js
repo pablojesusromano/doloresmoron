@@ -31,11 +31,11 @@ var cuadros = [
     { path: carpetaCuadros + "68-que-bueno-sentirnos-hermanos.jpg", name: "QUE BUENO SENTIRNOS HERMANOS", shortName: "hermanos", number: "68" },
     { path: carpetaCuadros + "705-llegada-la-tarde-el-señor-dijo.jpg", name: "LLEGADA LA TARDE, EL SEÑOR DIJO: CRUCEMOS A LA OTRA ORILLA", shortName: "tarde", number: "705" },
 
-    { path: carpetaCuadros + "comunicandonos-hoy.jpg", name: "COMUNICANDONOS HOY", shortName: "comunicandonos", number: "" },
+    { path: carpetaCuadros + "comunicandonos-hoy.jpg", name: "COMUNICANDONOS HOY", shortName: "comunicandonos", number: "0" },
     { path: carpetaCuadros + "253-bigbang.jpg", name: "EXPLOSIÓN DEL BIG BANG", shortName: "bigbang", number: "253" },
 
     { path: carpetaCuadros + "529-kona-ta-iell.jpg", name: "KONÁ TÁ IELL (CANTO PARA ENVIAR ENERGÍA)", shortName: "kona-ta-iell", number: "529" },
-    { path: carpetaCuadros + "maria-adela.jpg", name: "MARÍA ADELA", shortName: "maria-adela", number: "" },
+    { path: carpetaCuadros + "maria-adela.jpg", name: "MARÍA ADELA", shortName: "maria-adela", number: "0" },
 
     { path: carpetaCuadros + "552-pillan-kushe.jpg", name: "PILLÁN KUSHÉ (LA ANCIANA SAGRADA)", shortName: "pillan-kushe", number: "552" },
     { path: carpetaCuadros + "618-entre-el-cielo-y-la-tierra.jpg", name: "ENTRE EL CIELO Y LA TIERRA", shortName: "entre-el-cielo-y-la-tierra", number: "618" },
@@ -43,6 +43,24 @@ var cuadros = [
     { path: carpetaCuadros + "662-los-angeles-traviesos.jpg", name: "LOS ANGELES TRAVIESOS", shortName: "los-angeles-traviesos", number: "662" },
     { path: carpetaCuadros + "716-al-cielo-en-patineta.jpg", name: "AL CIELO EN PATINETA", shortName: "al-cielo-en-patineta", number: "716" },
 
+    { path: carpetaCuadros + "634-jugando-al-gallito-ciego.jpg", name: "JUGANDO AL GALLITO CIEGO", shortName: "jugando-al-gallito-ciego", number: "634" },
+    { path: carpetaCuadros + "732-descubriendo-otros-fantasmas.jpg", name: "DESCUBRIENDO OTROS FANTASMAS", shortName: "jugando-al-gallito-ciego", number: "732" },
+    
+    { path: carpetaCuadros + "677-el-senor-con-las-manos-sucias.jpg", name: "EL SEÑOR CON LAS MANOS SUCIAS", shortName: "el-senor-con-las-manos-sucias", number: "677" },
+    { path: carpetaCuadros + "678-el-senor-con-las-manos-en-la-masa.jpg", name: "EL SEÑOR CON LAS MANOS EN LA MASA", shortName: "el-senor-con-las-manos-en-la-masa", number: "678" },
+    
+    { path: carpetaCuadros + "733-cabeceando-jugadas.jpg", name: "CABECEANDO JUGADAS", shortName: "cabeceando-jugadas", number: "733" },
+    { path: carpetaCuadros + "734-desde-lo-profundo-de-la-tierra.jpg", name: "DESDE LO PROFUNDO DE LA TIERRA", shortName: "desde-lo-profundo-de-la-tierra", number: "734" },
+    
+    { path: carpetaCuadros + "742-tangentes-de-miami-a-comodoro.jpg", name: "TANGENTES DE MIAMI A COMODORO", shortName: "tangentes-de-miami-a-comodoro", number: "742" },
+    { path: carpetaCuadros + "746-la-otra-cara-olla-popular.jpg", name: "LA OTRA CARA... LA OLLA POPULAR", shortName: "la-otra-cara-olla-popular", number: "746" },
+    
+    { path: carpetaCuadros + "767-los-corredores-del-olvido.jpg", name: "LOS CORREDORES DEL OLVIDO", shortName: "los-corredores-del-olvido", number: "767" },
+    { path: carpetaCuadros + "807-los-ninos-nos-miran.jpg", name: "LOS NIÑOS NOS MIRAN", shortName: "los-ninos-nos-miran", number: "807" },
+    
+    { path: carpetaCuadros + "829-2-x-4-callejero.jpg", name: "2 X 4 CALLEJERO", shortName: "2-x-4-callejero", number: "829" },
+    { path: carpetaCuadros + "840-volver-a-empezar.jpg", name: "VOLVER A EMPEZAR", shortName: "volver-a-empezar", number: "840" },
+    
     /*     { path: carpetaCuadros + ".jpg", name: "", shortName: "", number: "" },
         { path: carpetaCuadros + ".jpg", name: "", shortName: "", number: "" }, */
 
