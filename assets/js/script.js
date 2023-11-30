@@ -44,7 +44,7 @@ var cuadros = [
     { path: carpetaCuadros + "716-al-cielo-en-patineta.jpg", name: "AL CIELO EN PATINETA", shortName: "al-cielo-en-patineta", number: "716" },
 
     { path: carpetaCuadros + "634-jugando-al-gallito-ciego.jpg", name: "JUGANDO AL GALLITO CIEGO", shortName: "jugando-al-gallito-ciego", number: "634" },
-    { path: carpetaCuadros + "732-descubriendo-otros-fantasmas.jpg", name: "DESCUBRIENDO OTROS FANTASMAS", shortName: "jugando-al-gallito-ciego", number: "732" },
+    { path: carpetaCuadros + "732-descubriendo-otros-fantasmas.jpg", name: "DESCUBRIENDO OTROS FANTASMAS", shortName: "descubriendo-otros-fantasmas", number: "732" },
     
     { path: carpetaCuadros + "677-el-senor-con-las-manos-sucias.jpg", name: "EL SEÑOR CON LAS MANOS SUCIAS", shortName: "el-senor-con-las-manos-sucias", number: "677" },
     { path: carpetaCuadros + "678-el-senor-con-las-manos-en-la-masa.jpg", name: "EL SEÑOR CON LAS MANOS EN LA MASA", shortName: "el-senor-con-las-manos-en-la-masa", number: "678" },
