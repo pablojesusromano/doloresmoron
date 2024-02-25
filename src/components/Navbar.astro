@@ -1,41 +1,170 @@
 ---
+import Navitem from "../shared/Navitem.astro";
+import Container from "../shared/Container.astro";
 
+const navItems = [
+    {
+        href: "#",
+        text: "INICIO",
+    },
+    {
+        href: "#cuadros",
+        text: "CUADROS",
+    },
+    {
+        href: "#murales",
+        text: "MURALES",
+    },
+    {
+        href: "#biografia",
+        text: "BIOGRAFÍA",
+    },
+    {
+        href: "#entrevistas",
+        text: "ENTREVISTAS",
+    },
+];
 ---
 
-<header class="fixed w-full bg-white">
+<!-- <header class="fixed w-full bg-white">
     <nav class="container mx-auto px-6 py-10">
         <div class="flex items-center justify-between">
             <div class="text-gray-700 text-xl font-thin">DOLORES MORÓN</div>
-            <div class="hidden md:flex items-center">
-                <a href="#" class="text-gray-700 font-thin px-4"> INICIO</a>
-                <a href="#" class="text-gray-700 font-thin px-4"> CUADROS</a>
-                <a href="#" class="text-gray-700 font-thin px-4"> MURALES</a>
-                <a href="#" class="text-gray-700 font-thin px-4"> BIOGRAFÍA</a>
-                <a href="#" class="text-gray-700 font-thin px-4"> ENTREVISTAS</a>
+            <div data-navbar class="hidden md:flex items-center">
+                <ul
+                    class="border-t border-box-border lg:border-t-0 px-6 lg:px-0 pt-6 lg:pt-0 flex flex-col lg:flex-row gap-y-4 gap-x-4 text-md text-heading-2 w-full lg:justify-center lg:items-center"
+                >
+                    {
+                        navItems.map((item) => {
+                            return <Navitem {...item} />;
+                        })
+                    }
+                </ul>
             </div>
             <div class="md:hidden flex items-center">
-                <button class="mobile-menu-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6 text-gray-500">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                <button
+                    data-toggle-nav
+                    data-open-nav="false"
+                    class="mobile-menu-button"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        class="h-6 w-6 text-gray-500"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
                 </button>
             </div>
         </div>
     </nav>
     <div class="hidden mobile-menu">
-        <a href="#" class="block text-sm px-2 py-4 text-dark bg-white-800">INICIO</a>
-        <a href="#" class="block text-sm px-2 py-4 text-dark bg-white-800">CUADROS</a>
-        <a href="#" class="block text-sm px-2 py-4 text-dark bg-white-800">MURALES</a>
-        <a href="#" class="block text-sm px-2 py-4 text-dark bg-white-800">BIOGRAFÍA</a>
-        <a href="#" class="block text-sm px-2 py-4 text-dark bg-white-800">ENTREVISTAS</a>
+        <ul
+            class="border-t border-box-border lg:border-t-0 px-6 lg:px-0 pt-6 lg:pt-0 flex flex-col lg:flex-row gap-y-4 gap-x-4 text-md text-heading-2 w-full lg:justify-center lg:items-center"
+        >
+            {
+                navItems.map((item) => {
+                    return <Navitem {...item} />;
+                })
+            }
+        </ul>
     </div>
+</header> -->
+<header class="fixed w-full bg-white">
+    <Container>
+        <nav class="container mx-auto px-6 py-10">
+            <div class="flex items-center justify-between">
+                <div class="text-gray-700 text-xl font-thin w-full">DOLORES MORÓN</div>
+
+                <div
+                    data-nav-overlay
+                    aria-hidden="true"
+                    class="fixed hidden inset-0 lg:!hidden bg-box-bg bg-opacity-0 backdrop-filter backdrop-blur-xl"
+                >
+                </div>
+                <div
+                    data-navbar
+                    class="flex h-0 overflow-hidden lg:!h-auto lg:scale-y-100 duration-300 ease-linear flex-col gap-y-6 gap-x-4 lg:flex-row w-full lg:justify-between lg:items-center absolute lg:relative top-full lg:top-0 bg-white lg:bg-white border-x border-x-box-border lg:border-x-0"
+                >
+                    <ul
+                        class="border-t border-box-border lg:border-t-0 px-6 lg:px-0 pt-6 lg:pt-0 flex flex-col lg:flex-row gap-y-4 gap-x-1 text-md text-heading-2 w-full lg:justify-center lg:items-center lg:pb-0 pb-5"
+                    >
+                        {
+                            navItems.map((item) => {
+                                return <Navitem {...item} />;
+                            })
+                        }
+                    </ul>
+                </div>
+
+                <div class="min-w-max flex items-center gap-x-3">
+                    <button
+                        data-toggle-nav
+                        data-open-nav="false"
+                        class="lg:hidden lg:invisible outline-none w-7 h-auto flex flex-col relative"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            class="h-6 w-6 text-gray-500"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </Container>
 </header>
 
 <script>
-    const menuButton = document.querySelector('.mobile-menu-button');
-    const mobileMenu = document.querySelector('.mobile-menu');
+    const toggleMenu = document.querySelector(
+        "[data-toggle-nav]",
+    ) as HTMLButtonElement;
+    const navbar = document.querySelector("[data-navbar]") as HTMLDivElement;
+    const overlayNav = document.querySelector(
+        "[data-nav-overlay]",
+    ) as HTMLDivElement;
+    if (toggleMenu) {
+        toggleMenu.addEventListener("click", (e) => {
+            e.preventDefault();
+            if (toggleMenu.getAttribute("data-open-nav") === "false") {
+                toggleMenu.setAttribute("data-open-nav", "true");
+                overlayNav.setAttribute("data-is-visible", "true");
+                document.body.classList.add("!overflow-y-hidden");
+                navbar.style.height = `${navbar.scrollHeight}px`;
+            } else {
+                toggleMenu.setAttribute("data-open-nav", "false");
+                overlayNav.setAttribute("data-is-visible", "false");
+                document.body.classList.remove("!overflow-y-hidden");
+                navbar.style.height = "0px";
+            }
+        });
 
-    menuButton.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-    });
+        navbar.addEventListener("click", () => {
+            toggleMenu.setAttribute("data-open-nav", "false");
+            overlayNav.setAttribute("data-is-visible", "false");
+            document.body.classList.remove("!overflow-y-hidden");
+            navbar.style.height = "0px";
+        });
+
+        overlayNav.addEventListener("click", () => {
+            toggleMenu.setAttribute("data-open-nav", "false");
+            overlayNav.setAttribute("data-is-visible", "false");
+            document.body.classList.remove("!overflow-y-hidden");
+            navbar.style.height = "0px";
+        });
+    }
 </script>
