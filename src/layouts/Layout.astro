@@ -4,6 +4,9 @@ interface Props {
 }
 
 const { title } = Astro.props;
+
+import Navbar from '../components/Navbar.astro';
+
 ---
 
 <!doctype html>
@@ -12,11 +15,11 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
+		<link rel="icon" href="/favicon.jpg" />
 		<title>{title}</title>
 	</head>
 	<body>
+		<Navbar/>
 		<slot />
 	</body>
 </html>
@@ -34,7 +37,7 @@ const { title } = Astro.props;
 	}
 	html {
 		font-family: system-ui, sans-serif;
-		background: #13151a;
+		background: #f0f0f0;
 		background-size: 224px;
 	}
 	code {
